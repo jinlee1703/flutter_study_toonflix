@@ -12,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: const Color(0xFF181818),
-        body: Padding(
+        body: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -111,7 +111,7 @@ class App extends StatelessWidget {
                 ),
               ),
               Transform.translate(
-                offset: Offset(0, -20),
+                offset: Offset(0, -40),
                 child: CurrencyCard(
                   name: 'Dollar',
                   code: 'USD',
